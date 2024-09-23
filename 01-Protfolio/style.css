@@ -1,9 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Be Vietnam Pro", system-ui;;
 }
+
+
 html , body{
     height: 100%;
     width: 100%;
 }
+:root{
+    --bgOrange: #e84949;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container{
+
+    width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1rem;
+}
+.logo{
+    width: 80px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+  
+}
+
+
+
+.logo-text{ 
+    margin-left: -1.1rem;
+    font-size: 28px;
+
+}
+
+.nav-items {
+    display: flex ;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+
+.nav-items div{
+   
+    cursor: pointer;
+    font-size:20px;
+    font-weight: 500;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ 
+.nav-items div:hover{
+    font-weight: bold;
+    transition:  0.8s;
+     }
+
+.hero-section{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5rem;
+        margin:4rem auto ;
+        padding:0 1rem ;
+       padding-bottom: 8rem;
+}
+
+ .faded-text{
+    user-select:none;
+    font-size: 7rem;
+    color: rgb(190, 179, 179);
+
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: 3s ease;
+ }
+ 
+ .hero-section-left{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:  2rem;
+ }
+
+ .hero-section-heading{
+    font-size: 36px;
+    color: #343d68;
+    font-weight: 500;
+ }
+ .role{
+    font-weight: 800;
+    color: #3c32ce;
+ }
+
+ .hero-section-sub-heading{
+    font-size: 47px;
+    line-height: 45px;
+
+ }
+
+ .hero-section-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 510; 
+ }
+
+ .btn-red{
+
+    background-color: var(--bgOrange);
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+  }
+  .btn-red::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+  }
+  .btn-red:hover::before {
+    transform: scaleX(1);
+  }
+  .btn-red:hover {
+    border: solid 3px var(--bgOrange);
+    color: black;
+  }

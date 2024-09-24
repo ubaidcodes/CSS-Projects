@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add this inside the <head> tag -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </head>
 <body>
     <div id="wrapper">
+
         <div class="container">
 
             <div class="navbar">
@@ -18,7 +21,7 @@
                 </div>
              
                 <div class="nav-items">
-                    <div><a href="#Projects">Projects</a></div>
+                    <div><a href="#projects">Projects</a></div>
                     <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactme">Contact Me</a></div>
 
@@ -28,51 +31,215 @@
 
             </div>
 
+            <div class="hero-section ">  
+
+                <div class=" absolute faded-text">Ubaid Ullah</div>
+    
+                <div class="hero-section-left">
+                    <div class="hero-section-heading" > Hi! I'm Ubaid Ullah </div>
+    
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+                    <div class=" hero-section-description">
+                        I’m a software developer and here is my portfolio website.
+                        Here you’ll learn about my journey as a software developer.
+                    </div>
+    
+                    <div class="btn-red" id="btn" > Hire Me</div>
+    
+    
+                </div>
+    
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="./Images/userAsset/dots.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-cube">
+                        <img src="./Images/userAsset/cube.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <img src="./Images/userAsset/circle.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-zigzag">
+                        <img src="./Images/userAsset/zigzags.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="./Images/userAsset/plus.png" alt="">
+                    </div>
+                    <div class="user-image">
+                        <img src="./Images/userAsset/user.jpg" alt="">
+                    </div>
+                </div>
+    
+               </div>
+
+        </div>
+        
+        <div class="project-section" id="projects">
+            <h2 class="project-header">Projects</h2>
+
+            <div class="project container">
+
+                <div class="project-card" id="project1">
+                    <div class="project-number project-number-right">01</div>
+                    <div class="project-content project-content-left">
+                        <div class="project-skills-container">
+                            <img class="project-skill" src="./Images/stack/HTML.png" alt="">
+                            <img class="project-skill" src="./Images/stack/CSS.png" alt="">
+                            <img class="project-skill" src="./Images/stack/Javascript.svg" alt="">
+                            <img class="project-skill" src="./Images/stack/Tailwind.png" alt="">
+                            <img class="project-skill" src="./Images/stack/Redux.svg" alt="">
+                            <img class="project-skill" src="./Images/stack/Vercel.svg" alt="">
+                           
+                        </div>
+                        <h2 class="project-heading"> Netflix-GPT</h2>
+                        <div class="project-subHeading"> It is a clone of netflix with integration of ChatGPT</div>
+                    <div class="btn-grp">
+                    <button class="btn-red btn-project">Read More</button>
+                     <a href="">
+                       <i title="GitHubLink" class="fa-brands fa-github fa-beat-fade icon"></i>
+                     </a>
+                     <a href="">
+                       <i title="Live Link" class="fa-solid fa-link icon"></i>
+                     </a>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="project-card" id="project2">
+                    <div class="project-number project-number-left">02</div>
+                    <div class="project-content project-content-right">
+                      <div class="project-skill-container">
+                        <img class="project-skill" src="./Images/stack/HTML.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/CSS.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Javascript.svg" alt="" />
+                        <img class="project-skill" src="./Images/stack/React.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Tailwind.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Redux.svg" alt="" />
+                        <img class="project-skill" src="./Images/stack/Vercel.svg" alt="" />
+                      </div>
+                      <h2 class="project-heading">Food Court</h2>
+                      <p class="project-subHeading">
+                        A FOOD COURT clone of SWIGGY where you can order food online.
+                      </p>
+                      <div class="btn-group">
+                        <button class="btn-red btn-project">Read More</button>
+                        <a href="">
+                          <i title="GitHubLink" class="fa-brands fa-github fa-beat-fade icon"></i>
+                        </a>
+                        <a href="">
+                          <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="project-card" id="project3">
+                    <div class="project-number project-number-right">03</div>
+                    <div class="project-content project-content-left">
+                      <div class="project-skill-container">
+                        <img class="project-skill" src="./Images/stack/HTML.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/CSS.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Javascript.svg" alt="" />
+                        <img class="project-skill" src="./Images/stack/Tailwind.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Vercel.svg" alt="" />
+                      </div>
+            
+                      <h2 class="project-heading">Obys Agency</h2>
+                      <p class="project-subHeading">
+                        Digital design agency focused on creative UI/UX design, branding and interaction design.
+                      </p>
+                      <div class="btn-group">
+                        <button class="btn-red btn-project">Read More</button>
+                        <a href="">
+                          <i title="GitHubLink" class="fa-brands fa-github fa-beat-fade icon"></i>
+                        </a>
+                        <a href="">
+                          <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="project-card" id="project4">
+                    <div class="project-number project-number-left">04</div>
+                    <div class="project-content project-content-right">
+                      <div class="project-skill-container">
+                        <img class="project-skill" src="./Images/stack/HTML.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/CSS.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Tailwind.png" alt="" />
+                        <img class="project-skill" src="./Images/stack/Vercel.svg" alt="" />
+                      </div>
+                      <h2 class="project-heading">RazorPay</h2>
+                      <p class="project-subHeading">
+                    We simplify payments & make it easy for you to focus on your business.
+                      </p>
+                      <div class="btn-group">
+                        <button class="btn-red btn-project">Read More</button>
+                        <a href="">
+                          <i title="GitHubLink" class="fa-brands fa-github fa-beat-fade icon"></i>
+                        </a>
+                        <a href="">
+                          <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
 
         </div>
 
-           <div class="hero-section ">
+        <div id="skills" class="container skill-container">
+           <div class="skill-fade-text">Skills</div>
+           <div class="skill-container-left">
+            <h2 class="skill-heading">
+              <span class="caps">M</span>e and
+              <br>
+              MyTech Stack
+            </h2>
 
-            <div class="faded-text">Ubaid Ullah</div>
+            <div class="skill-subHeading">
 
-            <div class="hero-section-left">
-                <div class="hero-section-heading" > Hi! I'm Ubaid Ullah </div>
-
-                <div class="hero-section-heading hero-section-sub-heading">
-                    I am a <span class="role"></span>
-                </div>
-                <div class=" hero-section-description">
-                    I’m a software developer and here is my portfolio website.
-                    Here you’ll learn about my journey as a software developer.
-                </div>
-
-                <div class="btn-red" id="btn" > Hire Me</div>
-
-
+              <p>My name is Ubaid, and I am an aspiring computer science student. I’ve always been fascinated by technology,
+                especially how it can change our lives. In high school, I started learning HTML and CSS, which sparked my
+                interest in coding and led me to explore more programming languages.</p>
+            <p>Currently, my tech stack includes HTML, CSS, JavaScript, React, TypeScript, and Redux. These tools help me create
+                interactive and engaging web applications. I love using React because it makes building user interfaces easier,
+                and TypeScript helps me write better code that is easier to understand and maintain.</p>
+            <p>As I continue to learn and grow in software development, I am excited to explore cloud computing and full-stack
+                development. I want to use my skills to create innovative projects and work with other developers to make a
+                positive impact in the tech world.</p>
+              
             </div>
-
-            <div class="hero-section-right">
-                <div class="absolute icons icon-dots">
-                    <img src="./Images/userAsset/dots.png" alt="">
-                </div>
-                <div class="absolute icons icon-cube">
-                    <img src="./Images/userAsset/cube.png" alt="">
-                </div>
-                <div class="absolute icons icon-circle">
-                    <img src="./Images/userAsset/circle.png" alt="">
-                </div>
-                <div class="absolute icons icon-zigzak">
-                    <img src="./Images/userAsset/zigzags.png" alt="">
-                </div>
-                <div class="absolute icons icon-plus">
-                    <img src="./Images/userAsset/plus.png" alt="">
-                </div>
-                <div class="user-image">
-                    <img src="./Images/userAsset/user.jpg" alt="">
-                </div>
-            </div>
-
            </div>
+           <div class="skills-container-right">
+            <img src="./images/userAsset/blob vector.png" class="blob-style" alt="" />
+
+      <img src="./images/stack/HTML.png" alt="" class="skills-logo" />
+      <img src="./images/stack/CSS.png" alt="" class="skills-logo" />
+      <img src="./images/stack/Javascript.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/React.png" alt="" class="skills-logo" />
+      <img src="./images/stack/NodeJs.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Next.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Redux.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Tailwind.png" alt="" class="skills-logo" />
+      <img src="./images/stack/Bootstrap.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/MaterialUI.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Express.png" alt="" class="skills-logo" />
+      <img src="./images/stack/Git.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Github.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Graphql.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/MongoDB.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Vercel.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/ChartJs.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Bash.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/Docker.svg" alt="" class="skills-logo" />
+      <img src="./images/stack/K8s.svg" alt="" class="skills-logo" />
+           </div>
+
+        </div>
+
         
     </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -70,21 +71,17 @@ a{
     text-decoration: none;
     color: black;
 }
- 
-.nav-items div:hover{
-    font-weight: bold;
-    transition:  0.8s;
-     }
-     @media (max-width:1500px) {
-      .nav-items {
-        padding: 0 8em;
-      }
-    }
-    @media (max-width:1000px) {
-      .nav-items {
-        display: none;
-      }
-    }
+@media (max-width:1500px) {
+  .nav-items {
+    padding: 0 8em;
+  }
+}
+@media (max-width:1000px) {
+  .nav-items {
+    display: none;
+  }
+}
+
     /* Navbar Style End */
 
 .hero-section{
@@ -173,6 +170,10 @@ a{
   .btn-red:hover {
     color:var(--bgOrange);
   
+  }
+
+  #btn-bottom{
+    display: none;
   }
 
 
@@ -335,6 +336,8 @@ a{
       scale: 0.7;
     }
   }
+
+  
   /* Hero section end */
  
 /* Project- Section */
@@ -344,32 +347,34 @@ a{
   background-color: rgb(231,231,231);
 }
 
+.project-container{
+  
+  max-width:1200px;
+  margin: 0 auto;
+  padding:  3rem 0;
+  
+  display: flex;
+  flex-direction: column;
+  
+  gap: 120px;
+  }
+
 .project-header{
   color: var(--bgOrange);
   font-size: 90px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 30px;
   
 } 
 
-.project.container{
-  
-max-width:1200px;
-margin: 0 auto;
-padding:  3rem 0;
 
-display: flex;
-flex-direction: column;
-
-gap: 120px;
-}
 
 .project-card{
   width: 90%;
   height: 550px;
  background-image: url(./Images/projects/Project1.png);
  background-size: cover;
- /* background-repeat: no-repeat; */
+ background-repeat: no-repeat;
  position: relative;
  box-shadow: 0px 0px 40px #1f1f1f;
 
@@ -451,7 +456,7 @@ z-index: 1 ;
 .project-content-right{
   right:10%;
 }
-.project-skill-container{
+.project-skills-container{
   width: 60%;
   display: flex;
   gap: 10px;
@@ -501,79 +506,24 @@ z-index: 1 ;
 }
 
 #project1{
-  background-image: url(./Images/projects/Project-02.png);
+  background-image: url(./Images/projects/Project1.png);
 }
 
 #project2{
   margin: 120px;
-  background-image: url(./Images/projects/Project-02.png);
+  background-image: url(./Images/projects/Project1.png);
 }
 
 #project3{
-  background-image: url(./Images/projects/Project-02.png);
+  background-image: url(./Images/projects/Project1.png);
 }
 
 #project4{
   margin: 120px;
-  background-image: url(./Images/projects/Project-02.png);
+  background-image: url(./Images/projects/Project1.png);
 }
 
-@media (max-width:1300px) {
-  .project-header {
-    padding-top: 30px;
-    color: var(--bgOrange);
-    text-align: center;
-    font-size: 40px;
-  }
-  .project-container {
-    padding: 5px;
-    margin: 10px;
-    gap: 60px;
-  }
-  .project-card {
-    width: 100%;
-    height: 300px;
-  }
-  .project-card {
-    background-size: cover;
-    background-position: center;
-  }
-  .project-content {
-    scale: 0.5;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-  .project-content-left {
-    left: 0;
-  }
-  .project-heading {
-    font-size: 40px;
-    width: 100%;
-  }
-  .project-subHeading {
-    width: 100%;
-  }
-  #project2 {
-    margin-left: 0;
-  }
-  #project4 {
-    margin-left: 0;
-  }
-  .project-skill-container {
-    width: 100%;
-  }
-  .project-skill {
-    width: 35px;
-  }
-  .project-card:hover .project-number {
-    display: none;
-  }
-  .project-card:hover .project-content {
-    scale: 0.55;
-  }
-}
+
 /* Project Section End */
 
 /*Skill Section Start*/
@@ -610,8 +560,8 @@ user-select: none;
 font-size: 15rem;
 font-weight: bold; 
 color: rgb(195, 185, 185);
-bottom: -28.5%;
-right: -13%;
+bottom: -32.5%;
+right: -0.5%;
 overflow-y:hidden ;
 }
 
@@ -772,3 +722,151 @@ footer{
     scale: 1.5;
   
   }
+
+  /* General container adjustment */
+  .container {
+    width: 100%;
+    max-width: 1200px; 
+        margin: 0 auto;
+    padding: 0 15px;   }
+
+/* For screens with a maximum width of 1300px */
+@media (max-width: 1300px) {
+.hero-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: -1rem; 
+  padding-bottom: 3rem;
+}
+.hero-section-description {
+  text-align: center;
+  /* Adjusts the width for smaller screens */
+  margin: auto;
+}
+.faded-text {
+  display: none;
+}
+.skill-fade-text{
+  display: none;
+}
+.hero-section-right {
+  margin-top: -2rem;
+  scale: 0.8;
+}
+#btn-top {
+  display: none;
+}
+#btn-bottom {
+  margin-top: -7rem;
+  display: block;
+}
+.hero-section-right {
+  margin-top: -6em;
+  scale: 0.7;
+}
+}
+
+@media (max-width:1300px) {
+  .project-header {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+  .project-container {
+    padding: 5px;
+    margin: 10px;
+    gap: 60px;
+  }
+  .project-card {
+    width: 100%;
+    height: 300px;
+  }
+  .project-card {
+    background-size: cover;
+    background-position: center;
+  }
+  .project-content {
+    scale: 0.5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .project-content-left {
+    left: 0;
+  }
+  .project-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+  .project-sub-heading {
+    width: 100%;
+  }
+  #project2 {
+    margin-left: 0;
+  }
+  #project4 {
+    margin-left: 0;
+  }
+  .project-skills-container {
+    width: 100%;
+  }
+  .project-skill {
+    width: 35px;
+  }
+  .project-card:hover .project-number {
+    display: none;
+  }
+  .project-card:hover .project-content {
+    scale: 0.55;
+  }
+}
+
+@media (max-width: 1300px) {
+  .skill-container {
+    margin: 0;
+    padding: 2em;
+    flex-direction: column;
+  }
+  .skill-heading {
+    font-size: 40px;
+    font: bold;
+  }
+  .caps {
+    font-size: 60px;
+  }
+  .skill-container-left {
+    width: 100%;
+  }
+  .skills-container-right {
+    width: 100%;
+  }
+  .skills-logo {
+    width: 50px;
+  }
+  .skill-fade-text {
+    display: none;
+  }
+  .skill-subHeading {
+    width: 100%;
+  }
+  .skill-heading::after {
+    bottom: 9%;
+  }
+}
+
+@media (max-width: 1300px) {
+  footer {
+    padding: 0.5rem;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer-faded-text {
+    display: none;
+  }
+}

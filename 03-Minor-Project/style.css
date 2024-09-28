@@ -39,7 +39,29 @@ body {
   font-size: 45px;
   letter-spacing: -1px;
   font-family: monument;
+  position: relative;
 }
+
+#nav h1::after{
+  content: "©️" ;
+  font-family: gilroy;
+  font-weight: 300;
+  font-size: 20px;
+  position: absolute;
+  top: 7%;
+  right: 2%;
+}
+#nav h1::before{
+  content: "model management" ;
+  font-family: gilroy;
+  font-weight: 300;
+  font-size: 15px;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+}
+
+
 
 #nav h2 {
   /* background-color: rgb(62, 60, 182); */
@@ -200,7 +222,7 @@ body {
   justify-content: center;
   gap: 1.25vw;
   border-top: 2px solid#000;
-  border-bottom : 2px solid#000;
+  border-bottom: 2px solid#000;
 }
 
 #alphabet h5 {
@@ -230,7 +252,6 @@ body {
   transition: all ease 0.2s;
   background-color: rgb(205, 205, 175);
   font-weight: bold;
-
 }
 
 #page2 {
@@ -239,131 +260,280 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2vw 5vw;
+  padding: 2vw 5vw;
 }
 
-#page2-part1{
+#page2-part1 {
   height: 100%;
   width: 50%;
-  background-size:cover ;
-  background-position: top;  
-  background-repeat: no-repeat; 
-  background-image: url(assets/assets\ 31.jpg) ;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(assets/assets\ 31.jpg);
 }
-#page2-part2{
+#page2-part2 {
   height: 100%;
-  width: 46%; 
+  width: 46%;
 }
 
-#page2-part2 img{
- height: 60%;
- width: 100%;
- object-fit: cover;
- object-position: center;
+#page2-part2 img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-
-#box{
+#box {
   /* background-color: red; */
   display: flex;
 
   width: 100%;
   height: 30%;
 }
-#box h4{
+#box h4 {
   font-size: 1.5vw;
   letter-spacing: 1px;
-text-align: start;
-  
+  text-align: start;
 }
 
-#box p{
-text-align: end;
-font-size: 17px;
-line-height: 22px;
+#box p {
+  text-align: end;
+  font-size: 17px;
+  line-height: 22px;
 }
 
-#shot{
+#shot {
   width: 100%;
   /* height: 100%; */
   padding: 0 5vw;
 }
-#shot h2{
+#shot h2 {
   font-family: monument;
   font-size: 28px;
   text-transform: uppercase;
 }
 
-
-
-#gif-container{
+#gif-container {
   /* background-color: red; */
   width: 100%;
   height: 100%;
   display: flex;
-
- 
-
-   
 }
 
-
-.right-container{
+.right-container {
   width: 55%;
   height: 100%;
-  background-color: rgb(235, 229, 229);
+  background-color: rgb(249, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
-.right-container img{
-
+.right-container img {
   width: 45vw;
   height: 70%;
-  
 }
 
-
-.left-container{
+.left-container {
   width: 45%;
   height: 100%;
   /* background-color: red; */
   position: relative;
-  background-color: azure;
-
 }
 
 .circle-text {
-  width: 20vw; 
-  border-radius: 50%; 
-  object-fit: cover; 
-position: absolute;
+  width: 20vw;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
   top: 20%; /* Align the top at the center */
   left: 18%; /* Align the left at the center */
-
- 
 }
 
-.arrow-image{
- 
-  width: 6vw; 
- 
-position: absolute;
+.arrow-image {
+  width: 6vw;
 
+  position: absolute;
 
   top: 36%; /* Align the top at the center */
   left: 32%; /* Align the left at the center */
   z-index: 1;
-
 }
 
-.circle-text:hover{
+.circle-text:hover {
   transform: scale(1.1);
-  transition: 1s ;
+  transition: 1s;
 }
-.arrow-image:hover{
+.arrow-image:hover {
   transform: scale(0.9);
-  transition: 1s ;
+  transition: 1s;
 }
+
+.para {
+  text-align: justify;
+  font-size: 20px;
+  font-family: lato;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  margin-top: 40vw;
+}
+
+#page3{
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  position: relative;
+  padding: 5vw 4vw;
+}
+
+#page3>h1{
+  text-align: center;
+  font-family: monument;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 800;
+  margin-bottom: 7.6vh;
+}
+
+#page3>h1:hover{
+  transform: scale(0.9);
+  transition: ease-in-out 0.6s;
+  color: #383333;
+}
+
+.elem{
+  height:15vh ;
+  width: 100% ;
+  /* background-color: red; */
+  border-top: 2px solid black;
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+}
+.elem img{
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  border-radius: 50% ;
+  left: 12%;
+  opacity:0 ;
+  transition: all ease-in 0.6s;
+}
+
+.elem h4{
+  font-size: 1.1vw;
+  font-weight: 500;
+  width: 6%;
+  text-transform: uppercase;
+}
+
+.elem .elem-part2{
+  width: 45%;
+}
+
+.elem-part2 h1{
+font-size: 2.7vw;
+/* font-family: monument; */
+text-transform: uppercase;
+font-weight: 500;
+}
+
+.elem-part2 h5{
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  /* background: red; */
+}
+
+.elem:nth-last-child(1){
+  border-bottom: 2px solid black;
+
+}
+
+.elem:nth-last-child(3) img{
+  left: 45%;
+}
+.elem:nth-last-child(1) img{
+  left: 45%;
+}
+.elem:hover{
+  background-color: azure;
+  cursor: pointer;
+  transform: scale(0.95);
+  
+}
+.elem:hover img{
+  opacity: 1;
+  left: 25%;
+
+}
+
+#marque{
+  /* height: 15vh; */
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 0.5vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  
+
+}
+
+#marque h1{
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  font-family: monument;
+  letter-spacing: 3px;
+  color: transparent;
+  margin-right: 16px;
+
+  /* background-color: yellow; */
+  animation: move 5s linear infinite ;
+}
+
+@keyframes move {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+.animation-right{
+  animation: moveRight 5s linear infinite ;
+
+}
+@keyframes moveRight {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(calc(100%  -16px));
+  }
+}
+
+#gif{
+  width: 100%;
+  height: 100%;
+  /* background-co lor: red; */
+}
+#gif img{
+  width: 80%;
+  height: 100vh;
+}
+
+#footer{
+  width: 100%;
+  height: 100%;
+}
+
